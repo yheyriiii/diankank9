@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dian Kan K9 | Escuela Canina y Pensión</title>
+    <style>
+        :root {
+            --primary: #D4AF37;
+            --secondary: #FFC107;
+            --dark: #0f0f0f;
+            --darker: #050505;
+            --light: #f4f4f4;
+            --gray: #222222;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--darker); color: var(--light); line-height: 1.6; }
+        header { background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1200&q=80') center/cover; padding: 40px 20px; text-align: center; border-bottom: 4px solid var(--primary); }
+        .logo-container { max-width: 150px; margin: 0 auto 15px; border-radius: 50%; border: 3px solid var(--primary); overflow: hidden; box-shadow: 0 0 15px rgba(212,175,55,0.5); }
+        .logo-container img { width: 100%; display: block; }
+        h1 { color: var(--primary); font-size: 2rem; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+        .subtitle { color: var(--secondary); font-size: 1.1rem; font-weight: bold; margin-bottom: 15px; }
+        .address-badge { background: var(--gray); display: inline-block; padding: 8px 15px; border-radius: 20px; border: 1px solid var(--primary); font-size: 0.95rem; margin-bottom: 20px; }
+        .cta-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 15px; }
+        .btn { background: #25D366; color: white; padding: 12px 25px; border-radius: 30px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4); transition: transform 0.2s; }
+        .btn:hover { transform: scale(1.05); }
+        .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+        .section-title { text-align: center; color: var(--primary); font-size: 1.8rem; margin-bottom: 30px; position: relative; padding-bottom: 10px; }
+        .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 3px; background: var(--secondary); }
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 40px; }
+        .card { background: var(--gray); border-radius: 12px; overflow: hidden; border: 1px solid #333; box-shadow: 0 5px 15px rgba(0,0,0,0.5); transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: var(--primary); }
+        .card img { width: 100%; height: auto; display: block; }
+        .card-content { padding: 20px; }
+        .card-content h3 { color: var(--secondary); margin-bottom: 10px; }
+        .video-container { position: relative; width: 100%; padding-bottom: 177.77%; background: #000; border-radius: 10px; overflow: hidden; margin-bottom: 15px; }
+        .video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+        .info-box { background: #1a1a1a; border-left: 5px solid var(--primary); padding: 20px; border-radius: 0 10px 10px 0; margin-bottom: 30px; }
+        .info-box ul { list-style: none; margin-top: 10px; }
+        .info-box li { margin-bottom: 8px; position: relative; padding-left: 20px; }
+        .info-box li::before { content: '🐾'; position: absolute; left: 0; color: var(--primary); }
+        footer { background: var(--darker); text-align: center; padding: 30px 20px; border-top: 2px solid var(--gray); margin-top: 40px; color: #888; font-size: 0.9rem; }
+        .whatsapp-float { position: fixed; width: 60px; height: 60px; bottom: 25px; right: 25px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 10px rgba(0,0,0,0.5); z-index: 100; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: transform 0.2s; }
+        .whatsapp-float:hover { transform: scale(1.1); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=300&q=80" alt="Dian Kan K9 Logo">
+        </div>
+        <h1>Escuela Canina Dian Kan K9</h1>
+        <div class="subtitle">Instructor K9 Jorge Sánchez • Pasión por el K9</div>
+        <div class="address-badge">📍 Calle Puma 05, La Pradera, Querétaro</div>
+        <div class="cta-buttons">
+            <a href="https://wa.me/524427786447" class="btn" target="_blank">💬 Cotizar por WhatsApp (442 778 6447)</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- Afiches / Promocionales Oficiales -->
+        <h2 class="section-title">Nuestros Servicios y Promocionales</h2>
+        <div class="grid-2">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=600&q=80" alt="Pensión Canina Libre de Jaulas">
+                <div class="card-content">
+                    <h3>Pensión Canina Libre de Jaulas</h3>
+                    <p>Hospedaje sin encierros, en un ambiente seguro, cómodo y familiar con atención personalizada 24/7 y camas individuales.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=80" alt="Adiestramiento K9">
+                <div class="card-content">
+                    <h3>Entrenamiento & Adiestramiento K9</h3>
+                    <p>Modificaciones de conducta, obediencia básica y avanzada, control de miedos a ruidos/truenos, y guardia y protección para todas las razas.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Avisos Importantes y Requisitos -->
+        <div class="info-box">
+            <h3 style="color: var(--secondary);">📋 Requisitos de Ingreso y Horarios</h3>
+            <ul>
+                <li><strong>Cartilla de vacunación actualizada</strong> obligatoria.</li>
+                <li>No se aceptan hembras en celo ni machos sin castrar.</li>
+                <li><strong>Horario para fotos y videos:</strong> de 9:00 a.m. a 7:00 p.m.</li>
+                <li>Ubicación física: Calle Puma 05, La Pradera, Querétaro.</li>
+            </ul>
+        </div>
+
+        <!-- Videos de Trabajo -->
+        <h2 class="section-title">Trabajo de Campo y Demostraciones</h2>
+        <div class="grid-2">
+            <div class="card">
+                <div class="video-container">
+                    <video controls muted autoplay loop>
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                </div>
+                <div class="card-content">
+                    <h3>Detección y Búsqueda K9</h3>
+                    <p>Prácticas de obediencia, control y estímulo operativo en campo abierto.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="video-container">
+                    <video controls muted autoplay loop>
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                </div>
+                <div class="card-content">
+                    <h3>Obediencia en Tarima & Permanencia</h3>
+                    <p>Ejercicios diarios de disciplina, enfoque y control de impulsos.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Escuela Canina Dian Kan K9 • Calle Puma 05, La Pradera, Querétaro.</p>
+        <p>Teléfono de Contacto / WhatsApp: 442 778 6447</p>
+    </footer>
+
+    <a href="https://wa.me/524427786447" class="whatsapp-float" target="_blank">
+        💬
+    </a>
+
+</body>
+</html>
